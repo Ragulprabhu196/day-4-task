@@ -1,0 +1,30 @@
+index.js
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="script.js"></script>
+    
+</body>
+</html>
+
+
+
+script .js
+
+
+var request =new XMLHttpRequest();
+request.open("GET","https://restcountries.com/v3.1/all");
+request.send();
+request.onload=function(){
+    var result=JSON.parse(request.response);
+    console.log(result);
+}
+
+0utput in inspect of browser
+Array(250)[0 … 99][100 … 199][200 … 249]200: {name: {…}, tld: Array(1), cca2: 'SE', ccn3: '752', cca3: 'SWE', …}201: {name: {…}, tld: Array(1), cca2: 'GA', ccn3: '266', cca3: 'GAB', …}202: {name: {…}, tld: Array(1), cca2: 'AT', ccn3: '040', cca3: 'AUT', …}203: {name: {…}, tld: Array(1), cca2: 'ZA', ccn3: '710', cca3: 'ZAF', …}204: {name: {…}, tld: Array(1), cca2: 'VU', ccn3: '548', cca3: 'VUT', …}205: {name: {…}, tld: Array(1), cca2: 'BJ', ccn3: '204', cca3: 'BEN', …}206: {name: {…}, tld: Array(1), cca2: 'CG', ccn3: '178', cca3: 'COG', …}207: {name: {…}, tld: Array(1), cca2: 'IE', ccn3: '372', cca3: 'IRL', …}208: {name: {…}, tld: Array(1), cca2: 'PG', ccn3: '598', cca3: 'PNG', …}209: {name: {…}, tld: Array(1), cca2: 'BL', ccn3: '652', cca3: 'BLM', …}210: {name: {…}, tld: Array(1), cca2: 'NU', ccn3: '570', cca3: 'NIU', …}211: {name: {…}, tld: Array(1), cca2: 'MK', ccn3: '807', cca3: 'MKD', …}212: {name: {…}, tld: Array(1), cca2: 'DK', ccn3: '208', cca3: 'DNK', …}213: {name: {…}, tld: Array(1), cca2: 'ZW', ccn3: '716', cca3: 'ZWE', …}214: {name: {…}, tld: Array(1), cca2: 'HN', ccn3: '340', cca3: 'HND', …}215: {name: {…}, tld: Array(2), cca2: 'HK', ccn3: '344', cca3: 'HKG', …}216: {name: {…}, tld: Array(2), cca2: 'MF', ccn3: '663', cca3: 'MAF', …}217: {name: {…}, tld: Array(1), cca2: 'TT', ccn3: '780', cca3: 'TTO', …}218: {name: {…}, tld: Array(1), cca2: 'SX', ccn3: '534', cca3: 'SXM', …}219: {name: {…}, tld: Array(1), cca2: 'LA', ccn3: '418', cca3: 'LAO', …}220: {name: {…}, tld: Array(1), cca2: 'MZ', ccn3: '508', cca3: 'MOZ', …}221: {name: {…}, tld: Array(1), cca2: 'UZ', ccn3: '860', cca3: 'UZB', …}222: {name: {…}, tld: Array(1), cca2: 'HT', ccn3: '332', cca3: 'HTI', …}223: {name: {…}, tld: Array(1), cca2: 'VG', ccn3: '092', cca3: 'VGB', …}224: {name: {…}, tld: Array(1), cca2: 'HR', ccn3: '191', cca3: 'HRV', …}225: {name: {…}, tld: Array(1), cca2: 'SZ', ccn3: '748', cca3: 'SWZ', …}226: {name: {…}, tld: Array(1), cca2: 'AL', ccn3: '008', cca3: 'ALB', …}227: {name: {…}, tld: Array(1), cca2: 'ID', ccn3: '360', cca3: 'IDN', …}228: {name: {…}, tld: Array(1), cca2: 'BD', ccn3: '050', cca3: 'BGD', …}229: {name: {…}, tld: Array(3), cca2: 'RU', ccn3: '643', cca3: 'RUS', …}230: {name: {…}, tld: Array(1), cca2: 'TN', ccn3: '788', cca3: 'TUN', …}231: {name: {…}, tld: Array(1), cca2: 'VC', ccn3: '670', cca3: 'VCT', …}232: {name: {…}, cca2: 'XK', cca3: 'UNK', cioc: 'KOS', status: 'user-assigned', …}233: {name: {…}, tld: Array(1), cca2: 'BY', ccn3: '112', cca3: 'BLR', …}234: {name: {…}, tld: Array(1), cca2: 'LC', ccn3: '662', cca3: 'LCA', …}235: {name: {…}, tld: Array(1), cca2: 'KP', ccn3: '408', cca3: 'PRK', …}236: {name: {…}, tld: Array(1), cca2: 'LU', ccn3: '442', cca3: 'LUX', …}237: {name: {…}, tld: Array(1), cca2: 'TC', ccn3: '796', cca3: 'TCA', …}238: {name: {…}, tld: Array(1), cca2: 'HU', ccn3: '348', cca3: 'HUN', …}239: {name: {…}, tld: Array(1), cca2: 'AU', ccn3: '036', cca3: 'AUS', …}240: {name: {…}, tld: Array(1), cca2: 'CW', ccn3: '531', cca3: 'CUW', …}241: {name: {…}, tld: Array(1), cca2: 'SJ', ccn3: '744', cca3: 'SJM', …}242: {name: {…}, tld: Array(1), cca2: 'FJ', ccn3: '242', cca3: 'FJI', …}243: {name: {…}, tld: Array(2), cca2: 'QA', ccn3: '634', cca3: 'QAT', …}244: {name: {…}, tld: Array(1), cca2: 'MC', ccn3: '492', cca3: 'MCO', …}245: {name: {…}, tld: Array(1), cca2: 'SB', ccn3: '090', cca3: 'SLB', …}246: {name: {…}, tld: Array(2), cca2: 'BQ', ccn3: '535', cca3: 'BES', …}247: {name: {…}, tld: Array(1), cca2: 'DM', ccn3: '212', cca3: 'DMA', …}248: {name: {…}, tld: Array(1), cca2: 'PE', ccn3: '604', cca3: 'PER', …}249: {name: {…}, tld: Array(1), cca2: 'BN', ccn3: '096', cca3: 'BRN', …}length: 250[[Prototype]]: Array(0)at: ƒ at()concat: ƒ concat()constructor: ƒ Array()copyWithin: ƒ copyWithin()entries: ƒ entries()every: ƒ every()fill: ƒ fill()filter: ƒ filter()find: ƒ find()findIndex: ƒ findIndex()findLast: ƒ findLast()findLastIndex: ƒ findLastIndex()flat: ƒ flat()flatMap: ƒ flatMap()forEach: ƒ forEach()includes: ƒ includes()indexOf: ƒ indexOf()join: ƒ join()keys: ƒ keys()lastIndexOf: ƒ lastIndexOf()length: 0map: ƒ map()pop: ƒ pop()push: ƒ push()reduce: ƒ reduce()reduceRight: ƒ reduceRight()reverse: ƒ reverse()shift: ƒ shift()slice: ƒ slice()some: ƒ some()sort: ƒ sort()splice: ƒ splice()toLocaleString: ƒ toLocaleString()toString: ƒ toString()unshift: ƒ unshift()values: ƒ values()Symbol(Symbol.iterator): ƒ values()Symbol(Symbol.unscopables): {at: true, copyWithin: true, entries: true, fill: true, find: true, …}[[Prototype]]: Object
